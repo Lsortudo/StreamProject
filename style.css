@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+:root {
+    --main-color:#000000;
+    --secondary-color:#0F0F13;
+    --main-font-color: #ffffff;
+    --secondary-font-color: #5B5B65;
+    --padding-decade: 10px;
+    --view-port-width-decade-two: 20vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--main-color);
+    font-family: "Poppins", sans-serif;
+}
+nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: var(--view-port-width-decade-two);
+    /* acima tem que ser 15 e dar um jeito de arrumar com flex */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.logo-img {
+    width: 80px;
+    height: 48px;
+}
+.logo-name {
+    font-family: 'Otomanopee One', sans-serif;
+    color: var(--main-font-color);
+}
+.searchBar {
+    width: var(--view-port-width-decade-two);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    padding: var(--padding-decade);
+}
+#inputBox {
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    color: var(--main-font-color);
+    flex: 1;
+    padding-left: 8px;
+    overflow: hidden;
+}
+.fa-search {
+    color: var(--secondary-font-color);
+    font-size: 1rem;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(var(--view-port-width-decade-two) + calc(var(--view-port-width-decade-two) / 4 ));
+    padding-left: var(--padding-decade);
+}
+a {
+    color: var(--main-font-color);
+    text-decoration: none;
+    
+}
+a:first-child{
+    color: rgb(98, 107, 235);
+}
+.icons-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(var(--view-port-width-decade-two) / 4 );
+    /* padding-left: calc(var(--padding-decade) * 10 ); */
+    /* margin-left: calc(var(--padding-decade) * 10 ); */
+    margin-right: calc(var(--padding-decade) * 2 );
+    font-size: 20px;
+}
+.fa-bell, .fa-crown, .fa-comment-alt {
+    color: var(--secondary-font-color);
+    cursor: pointer;
+    
+}
+.fa-comment-alt{
+    color: orange;
+}
+.userProfile {
+    width: var(--view-port-width-decade-two);
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: var(--padding-decade);
+}
+.userDetails {
+    padding-left: calc(var(--padding-decade) * 2 );
+}
+.userH1 {
+    color: var(--main-font-color);
+}
+.userP {
+    color: #70707C;
+}
+.userImage {
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+}
+.dashboard {
+    width: 20vw;
+    height: 90vh;
+    background: var(--secondary-color);
+}
+.features {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1px
+}
+.features p {
+    color: white;
+    margin-top: 5rem;
+}
